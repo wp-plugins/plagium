@@ -1,4 +1,4 @@
-=== Plagiarism ===
+=== Plagium ===
 Contributors: plagium
 Donate link: http://www.plagium.com/
 Tags: plagium, plagiarism, plugin, plagiat, plagio, duplicate, content theft, turnitin, theft, plague
