@@ -4,21 +4,22 @@ Donate link: http://www.plagium.com/
 Tags: plagium, plagiarism, plugin, plagiat, plagio, duplicate, content theft, turnitin, theft, plague
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.0
 License: GPLv2
 
 Plagium is an innovative, fast, and easy-to-use means to check text against possible plagiarism or possible sources of origination.
 
 == Description ==
 
-Plagium is a service of Septet Systems Inc. – a New York-based company that specializes in advanced search solutions for industry, the public sector, and government. We have aimed to provide an easy to use service that applies to a broad base of users. 
+Plagium is a service of Septet Systems Inc. - a New York-based company that specializes in advanced search solutions for industry, the public sector, and government. We have aimed to provide an easy to use service that applies to a broad base of users. 
 
-Plagium makes use of a proprietary technique that intelligently breaks up the input text into smaller “snippets”. These snippets are matched against Web content in an efficient manner, with the matches scored to determine what documents match the input text. The result is a much cleaner view of possible matching documents – a view that is much less noisy than the results offered by the major search engines.
+Plagium makes use of a proprietary technique that intelligently breaks up the input text into smaller "snippets". These snippets are matched against Web content in an efficient manner, with the matches scored to determine what documents match the input text. The result is a much cleaner view of possible matching documents – a view that is much less noisy than the results offered by the major search engines.
 
 = Options Provided = 
  
-Plagium account information.
-Url & domain filter.
+For administrators:
+1. Plagium account information 
+2. Authorize Deep Search
 
 = Credits =
 plagium.com
@@ -62,7 +63,6 @@ The answer is NO. Plagium only returns links to documents containing text blocks
 
 = 1.0 =
 * First release
-
 
 == Upgrade Notice ==
 
