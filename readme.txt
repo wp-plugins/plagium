@@ -13,7 +13,7 @@ Plagium is an innovative, fast, and easy-to-use means to check text against poss
 
 Plagium is a service of Septet Systems Inc. - a New York-based company that specializes in advanced search solutions for industry, the public sector, and government. We have aimed to provide an easy to use service that applies to a broad base of users. 
 
-Plagium makes use of a proprietary technique that intelligently breaks up the input text into smaller "snippets". These snippets are matched against Web content in an efficient manner, with the matches scored to determine what documents match the input text. The result is a much cleaner view of possible matching documents – a view that is much less noisy than the results offered by the major search engines.
+Plagium makes use of a proprietary technique that intelligently breaks up the input text into smaller "snippets". These snippets are matched against Web content in an efficient manner, with the matches scored to determine what documents match the input text. The result is a much cleaner view of possible matching documents - a view that is much less noisy than the results offered by the major search engines.
 
 = Options Provided = 
  
