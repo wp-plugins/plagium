@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Plagium
-Plugin URI: http://www.plagium.com/plugins/wordpress.cfm
+Plugin URI: http://www.plagium.com/wordpress.cfm
 Description: Plagium is an innovative, fast, and easy-to-use means to check text against possible plagiarism or possible sources of origination.
 Author: plagium.com
 Version: 1.0.2
