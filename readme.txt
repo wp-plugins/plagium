@@ -4,7 +4,7 @@ Donate link: http://www.plagium.com/
 Tags: plagium, plagiarism, plugin, plagiat, plagio, duplicate, content theft, turnitin, theft, plague
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2
 
 Plagium is an innovative, fast, and easy-to-use means to check text against possible plagiarism or possible sources of origination.
@@ -52,6 +52,9 @@ The answer is NO. Plagium only returns links to documents containing text blocks
 2. configuration page
 
 == Changelog ==
+
+= 1.0.3 =
+* Bug corrections
 
 = 1.0.2 =
 * Global admin options

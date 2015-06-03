@@ -1,33 +1,37 @@
+/*
+    Plagium WordPress Plugin CSS
+    http://www.plagium.com
+    (c) Septet Systems 2015
+*/
 
-/* Scrollable css for Plagium */
-.scrollable {
+#plagium_content .scrollable {
 	position: relative;
     overflow: auto;
 }
 
 /* Let's get this party started */
-::-webkit-scrollbar {
+#plagium_content ::-webkit-scrollbar {
     width: 12px;
 }
  
 /* Track */
-::-webkit-scrollbar-track {
+#plagium_content ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+#plagium_content  ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgba(200,200,200,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-::-webkit-scrollbar-thumb:window-inactive {
+
+#plagium_content ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(200,200,200,0.4); 
 }
-
 
 #plagium_settings_form fieldset{
   border:1px solid #999;
@@ -77,22 +81,22 @@
     padding-top:10px;
 }
 
-.content {
-	padding:10px 0 10px 0;
-	width: 100%;
-	overflow: none;
-}
+    #plagium_content .content {
+	        padding:10px 0 10px 0;
+	        width: 100%;
+	        overflow: none;
+    }
 
-.contentOpen {
-	padding-right:260px!important;
-}
+    #plagium_content .contentOpen {
+	    padding-right:260px!important;
+    }
 
-.label.foundDocuments:hover {
+#plagium_content .label.foundDocuments:hover {
 	cursor:pointer;
 	cursor:hand;
 }
 
-.content p {
+#plagium_content .content p {
 	font-size: 1.2em;
 	line-height: 1.6;
 	font-weight: 300;
@@ -100,14 +104,14 @@
 	text-align: justify;
 }
 
-.content .leftColumnTop {
+#plagium_content .content .leftColumnTop {
 	width:65%;
 	height:20px;
 	float:left;
 	font-size:0.8em;
 	margin:0;
 }
-.content .rightColumnTop {
+#plagium_content .content .rightColumnTop {
 	width:30%;
 	height:20px;
 	float:right;
@@ -115,36 +119,36 @@
 	margin:0 20px 0 0;
 }
 
-.content .leftColumn {
+#plagium_content .content .leftColumn {
 	width:65%;
     height:500px;
 	float:left;
 }
 
-.content .leftColumn p {
+#plagium_content .content .leftColumn p {
 	padding:0;
 	font-size:0.9em;
 }
 
-.content .leftColumn div.page {
+#plagium_content .content .leftColumn div.page {
 	padding:5px 5px 5px 5px;
 	background-color:#F7F8E0;
 }
 
-.content .leftColumnBottom {
+#plagium_content .content .leftColumnBottom {
 	width:68%;
 	text-align:right;
 	font-size:0.8em;
 	padding-right:15px;
 }
 
-.content.contentOpen div.leftColumnBottom {
+#plagium_content .content.contentOpen div.leftColumnBottom {
 	text-align:right;
 	font-size:0.8em;
 	padding-right:15px;
 }
 
-.content .rightColumn {
+#plagium_content .content .rightColumn {
 	width:30%;
     height:500px;
 	float:right;
@@ -152,30 +156,30 @@
 	margin-right:20px;
 }
 
-.content .miniResults {
+#plagium_content .content .miniResults {
 	padding-right:10px;
 }
 
-.result{
+#plagium_content .result{
 		text-align:left;
 		margin-bottom:5px;
 		padding:2px 3px 2px 3px;
 }
-.result:hover{
+#plagium_content .result:hover{
 		background-color:#EEEEEE;
 }
-.result.highlight{
+#plagium_content .result.highlight{
 		background-color:yellow!important;
 }
-.result:hover.highlight{
+#plagium_content .result:hover.highlight{
 		background-color:yellow!important;
 }
 
-.content.contentOpen div.rightColumn {
+#plagium_content .content.contentOpen div.rightColumn {
 	display:none;
 }
 
-.content .rightColumn .documentNumber{
+#plagium_content .content .rightColumn .documentNumber{
 	padding:10px 5px 10px 5px;
 	margin:0 10px 10px 0;
 	background-color:#F7F8E0;
@@ -184,24 +188,24 @@
 	font-weight:bold;
 }
 
-.waitingWeel {
+#plagium_content .waitingWeel {
 	text-align:center;
 }
 
-.highlight { 
+#plagium_content .highlight { 
 	background-color: yellow;
 }
 
-.highlightQuery { 
+#plagium_content .highlightQuery { 
 	background-color: #cfcfcf;
 }
 
-.highlightQuery:hover { 
+#plagium_content .highlightQuery:hover { 
 	background-color: yellow;
 	cursor: hand; 
 	cursor: pointer;
 }
 
-.queryOpen { 
+#plagium_content .queryOpen { 
 	background-color: yellow;
 }

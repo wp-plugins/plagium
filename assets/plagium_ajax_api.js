@@ -1,5 +1,5 @@
 /*
-    Plagium Ajax API 1.0.2
+    Plagium Ajax API 1.0.3
     http://www.plagium.com
     (c) Septet Systems 2015
 */
@@ -491,6 +491,8 @@ jQuery(document).ready(function () {
         plagiumLoad();
     }
 
-    plagiumCheckVersion();
+    if (jQuery('#plagium_version').length > 0) {
+        plagiumCheckVersion();
+    }
 });
 

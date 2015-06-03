@@ -4,15 +4,15 @@ Plugin Name: Plagium
 Plugin URI: http://www.plagium.com/wordpress.cfm
 Description: Plagium is an innovative, fast, and easy-to-use means to check text against possible plagiarism or possible sources of origination.
 Author: plagium.com
-Version: 1.0.2
-Author URI: http://www.plagium.om
+Version: 1.0.3
+Author URI: http://www.plagium.com
 License: GPLv3
 */
 
 if (is_admin()) $plagium = new Plagium();
 
 class Plagium {
-    const PLUGIN_VERSION = '1.0.2';
+    const PLUGIN_VERSION = '1.0.3';
     const LANGUAGE = 'en';
 
     public function __construct(){
@@ -26,20 +26,27 @@ class Plagium {
 
     public function add_header_styles($hook){
 	    if (in_array($hook, array('post.php','post-new.php','settings_page_plagium-admin'))){
-	      wp_enqueue_style('plagium_css', plugins_url('assets/plagium.css',__FILE__),false,false,'all');
+        
+	      wp_register_style('plagium_css', plugins_url('assets/plagium.css',__FILE__),array(),__(self::PLUGIN_VERSION),'all');
+          
 	      wp_enqueue_style('thickbox');
+          wp_enqueue_style('plagium_css');
 	    }
     }
 
     public function add_header_scripts($hook){
 	    if (in_array($hook, array('post.php','post-new.php','settings_page_plagium-admin'))){
+        
+          wp_register_script( 'plagium_language', plugin_dir_url( __FILE__ ) . 'assets/languages/en.js', array(),__(self::PLUGIN_VERSION), false  );
+          wp_register_script( 'plagium_ajax_api', plugin_dir_url( __FILE__ ) . 'assets/plagium_ajax_api.js', array(),__(self::PLUGIN_VERSION), false  );
+          
 	      wp_enqueue_script( 'jquery');
 	      wp_enqueue_script( 'thickbox');
-          wp_enqueue_script( 'plagium_language', plugin_dir_url( __FILE__ ) . 'assets/languages/en.js' );
-          wp_enqueue_script( 'plagium_ajax_api', plugin_dir_url( __FILE__ ) . 'assets/plagium_ajax_api.js' );
+          wp_enqueue_script('plagium_language');
+          wp_enqueue_script('plagium_ajax_api');
 	    }
     }
-
+    
     public function update_user_option($name,$value){
 	    $uid = get_current_user_id();
 	    if($uid == 0) return false;
@@ -74,8 +81,10 @@ class Plagium {
     }
 
     public function add_meta_boxes() {
-	    add_meta_box('plagium_id', __('Plagium', self::LANGUAGE), array(&$this,'plagium_iframe'), 'post', 'advanced', 'high');
-	    add_meta_box('plagium_id', __('Plagium', self::LANGUAGE), array(&$this,'plagium_iframe'), 'page', 'advanced', 'high');
+        // add  to post 
+	    add_meta_box('plagium_id', __('Plagium', self::LANGUAGE), array(&$this,'plagium_box'), 'post', 'advanced', 'high');
+        // add to page
+	    add_meta_box('plagium_id', __('Plagium', self::LANGUAGE), array(&$this,'plagium_box'), 'page', 'advanced', 'high');
     }
 	
     public function add_dashboard_meta_boxes() {
@@ -106,7 +115,7 @@ class Plagium {
 	    }
     }
 
-    public function plagium_iframe(){
+    public function plagium_box(){
         $post_id = intval( $_REQUEST['post'] );
         if ( ! $post_id ) $post_id=0;
   
