@@ -1,0 +1,211 @@
+/*
+    Plagium WordPress Plugin CSS
+    http://www.plagium.com
+    (c) Septet Systems 2015
+*/
+
+#plagium_content .scrollable {
+	position: relative;
+    overflow: auto;
+}
+
+/* Let's get this party started */
+#plagium_content ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+#plagium_content ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+#plagium_content  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(200,200,200,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#plagium_content ::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(200,200,200,0.4); 
+}
+
+#plagium_settings_form fieldset{
+  border:1px solid #999;
+  padding: 0 20px 0 20px;
+  margin-top:10px;
+}
+
+#plagium_settings_form legend{
+  border:1px solid #999;
+  padding: 0 20px 0 20px;
+  font-weight: bold;
+}
+
+#plagium_container
+{
+    width:100%;
+    border-top:1px solid #AAA;
+    margin-top:10px;
+}
+
+.plagium_error
+{
+    display:none;
+    color:red;
+}
+
+.plagium_status
+{
+    width:100%;
+    border:1px solid #AAA;
+    text-align:center;
+    padding: 5px 0 5px 0;
+}
+
+.plagium_message
+{
+    display:none;
+    width:100%;
+    border:1px solid #AAA;
+    text-align:center;
+    padding: 5px 0 5px 0;
+}
+
+#plagium_content
+{
+    width:100%;
+    padding-top:10px;
+}
+
+    #plagium_content .content {
+	        padding:10px 0 10px 0;
+	        width: 100%;
+	        overflow: none;
+    }
+
+    #plagium_content .contentOpen {
+	    padding-right:260px!important;
+    }
+
+#plagium_content .label.foundDocuments:hover {
+	cursor:pointer;
+	cursor:hand;
+}
+
+#plagium_content .content p {
+	font-size: 1.2em;
+	line-height: 1.6;
+	font-weight: 300;
+	padding: 5px 8%;
+	text-align: justify;
+}
+
+#plagium_content .content .leftColumnTop {
+	width:65%;
+	height:20px;
+	float:left;
+	font-size:0.8em;
+	margin:0;
+}
+#plagium_content .content .rightColumnTop {
+	width:30%;
+	height:20px;
+	float:right;
+	font-size:0.8em;
+	margin:0 20px 0 0;
+}
+
+#plagium_content .content .leftColumn {
+	width:65%;
+    height:500px;
+	float:left;
+}
+
+#plagium_content .content .leftColumn p {
+	padding:0;
+	font-size:0.9em;
+}
+
+#plagium_content .content .leftColumn div.page {
+	padding:5px 5px 5px 5px;
+	background-color:#F7F8E0;
+}
+
+#plagium_content .content .leftColumnBottom {
+	width:68%;
+	text-align:right;
+	font-size:0.8em;
+	padding-right:15px;
+}
+
+#plagium_content .content.contentOpen div.leftColumnBottom {
+	text-align:right;
+	font-size:0.8em;
+	padding-right:15px;
+}
+
+#plagium_content .content .rightColumn {
+	width:30%;
+    height:500px;
+	float:right;
+	font-size:0.8em;
+	margin-right:20px;
+}
+
+#plagium_content .content .miniResults {
+	padding-right:10px;
+}
+
+#plagium_content .result{
+		text-align:left;
+		margin-bottom:5px;
+		padding:2px 3px 2px 3px;
+}
+#plagium_content .result:hover{
+		background-color:#EEEEEE;
+}
+#plagium_content .result.highlight{
+		background-color:yellow!important;
+}
+#plagium_content .result:hover.highlight{
+		background-color:yellow!important;
+}
+
+#plagium_content .content.contentOpen div.rightColumn {
+	display:none;
+}
+
+#plagium_content .content .rightColumn .documentNumber{
+	padding:10px 5px 10px 5px;
+	margin:0 10px 10px 0;
+	background-color:#F7F8E0;
+	color: #666666;
+	font-size:1.0em;
+	font-weight:bold;
+}
+
+#plagium_content .waitingWeel {
+	text-align:center;
+}
+
+#plagium_content .highlight { 
+	background-color: yellow;
+}
+
+#plagium_content .highlightQuery { 
+	background-color: #cfcfcf;
+}
+
+#plagium_content .highlightQuery:hover { 
+	background-color: yellow;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+#plagium_content .queryOpen { 
+	background-color: yellow;
+}
